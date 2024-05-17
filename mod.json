@@ -8,7 +8,8 @@
     "id": "hiimjustin000.every_key_jumps",
     "name": "Every Key Jumps",
     "developer": "hiimjustin000",
-    "description": "A mod that allows you to jump with almost every key on your keyboard on classic mode.",
+    "description": "A mod that allows you to jump with almost every key on your keyboard.",
+    "repository": "https://github.com/hiimjustin000/EveryKeyJumps",
     "settings": {
         "ekj-enabled": {
             "name": "Enable Every Key Jumps",
