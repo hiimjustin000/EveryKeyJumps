@@ -1,10 +1,10 @@
 {
-    "geode": "2.0.0-beta.26",
+    "geode": "2.0.0-beta.27",
     "gd": {
         "win": "2.204",
         "mac": "2.200"
     },
-    "version": "v1.0.0",
+    "version": "v1.0.1",
     "id": "hiimjustin000.every_key_jumps",
     "name": "Every Key Jumps",
     "developer": "hiimjustin000",
