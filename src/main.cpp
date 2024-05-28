@@ -50,7 +50,7 @@ std::vector<enumKeyCodes> p2Keys = {
 #include <Geode/modify/CCKeyboardDispatcher.hpp>
 class $modify(EKJKeyboardDispatcher, CCKeyboardDispatcher) {
     bool dispatchKeyboardMSG(enumKeyCodes key, bool down, bool repeat) {
-        if (Mod::get()->getSettingValue<bool>("ekj-enabled")) {
+        if (Mod::get()->getSettingValue<bool>("ekj-enabled") && !repeat) {
             auto gameManager = GameManager::sharedState();
             auto player1 = std::find(p1Keys.begin(), p1Keys.end(), key) != p1Keys.end();
             if (gameManager->m_playLayer && (player1 || std::find(p2Keys.begin(), p2Keys.end(), key) != p2Keys.end())) {
