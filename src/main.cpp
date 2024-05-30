@@ -28,7 +28,7 @@ class $modify(EKJKeyboardDispatcher, CCKeyboardDispatcher) {
             auto player1 = std::find(p1Keys.begin(), p1Keys.end(), key) != p1Keys.end();
             if (!player1 && std::find(p2Keys.begin(), p2Keys.end(), key) == p2Keys.end()) goto LABEL_RETURN;
 
-            if (gameLayer->m_levelSettings->m_platformerMode && (key == KEY_A || key == KEY_D)) goto LABEL_RETURN;
+            if (gameLayer->m_levelSettings->m_platformerMode && (key == KEY_W || key == KEY_A || key == KEY_D)) goto LABEL_RETURN;
             if (gameLayer->m_isPracticeMode && (key == KEY_W || key == KEY_Z)) goto LABEL_RETURN;
 
             gameLayer->handleButton(down, 1, player1);
