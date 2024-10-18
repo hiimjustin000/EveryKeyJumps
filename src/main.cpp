@@ -4,7 +4,7 @@ using namespace geode::prelude;
 
 std::vector<enumKeyCodes> p1Keys = {
     KEY_One, KEY_Two, KEY_Three, KEY_Four,
-    KEY_Five, KEY_Q, KEY_W, KEY_E,
+    KEY_Five, KEY_Q, /*KEY_W,*/ KEY_E,
     KEY_R, KEY_T, KEY_A, KEY_S,
     KEY_D, KEY_F, KEY_G, KEY_Z,
     KEY_X, KEY_C, KEY_V, KEY_B
@@ -35,8 +35,7 @@ class $modify(EKJKeyboardDispatcher, CCKeyboardDispatcher) {
             if (gameLayer->m_isPracticeMode && (key == KEY_X || key == KEY_Z))
                 return CCKeyboardDispatcher::dispatchKeyboardMSG(key, down, repeat);
 
-            if (key != KEY_W || Mod::get()->getSettingValue<bool>("enable-w"))
-                gameLayer->handleButton(down, 1, player1);
+            gameLayer->handleButton(down, 1, player1);
         }
 
         return CCKeyboardDispatcher::dispatchKeyboardMSG(key, down, repeat);

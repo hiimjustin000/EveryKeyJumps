@@ -15,12 +15,6 @@
             "description": "Enable or disable the mod.",
             "default": true,
             "type": "bool"
-        },
-        "enable-w": {
-            "name": "Enable W",
-            "description": "Enable or disable the W key. For people whose W key does not work in the game.",
-            "default": true,
-            "type": "bool"
         }
     },
     "incompatibilities": [
