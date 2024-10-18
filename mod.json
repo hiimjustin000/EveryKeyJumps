@@ -1,19 +1,24 @@
 {
-    "geode": "2.0.0-beta.27",
+    "geode": "3.8.1",
     "gd": {
-        "win": "2.204",
-        "mac": "2.200"
+        "win": "2.206",
+        "mac": "2.206"
     },
-    "version": "v1.1.2",
+    "version": "v1.1.3",
     "id": "hiimjustin000.every_key_jumps",
     "name": "Every Key Jumps",
     "developer": "hiimjustin000",
     "description": "A mod that allows you to jump with almost every key on your keyboard.",
-    "repository": "https://github.com/hiimjustin000/EveryKeyJumps",
     "settings": {
         "ekj-enabled": {
             "name": "Enable Every Key Jumps",
             "description": "Enable or disable the mod.",
+            "default": true,
+            "type": "bool"
+        },
+        "enable-w": {
+            "name": "Enable W",
+            "description": "Enable or disable the W key. For people whose W key does not work in the game.",
             "default": true,
             "type": "bool"
         }
@@ -24,5 +29,15 @@
             "version": ">=v1.0.0",
             "importance": "conflicting"
         }
+    ],
+    "links": {
+        "community": "https://discord.gg/QVKmbvBXA7",
+        "source": "https://github.com/hiimjustin000/RequestedRatings",
+        "homepage": "https://www.hiimjustin000.com"
+    },
+    "tags": [
+        "enhancement",
+        "gameplay",
+        "offline"
     ]
 }

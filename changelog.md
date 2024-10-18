@@ -1,4 +1,9 @@
 # Every Key Jumps Changelog
+## v1.1.3 (2024-10-18)
+- Ported to Geometry Dash v2.206
+- Added a setting to enable or disable the W key
+- Fixed a bug where the X key would not work in practice mode
+
 ## v1.1.2 (2024-05-30)
 - Revert the W key fix because it caused a bug with the W key in platformer mode
 
